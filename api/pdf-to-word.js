@@ -12,7 +12,7 @@ form.parse(req, async (err, fields, files)=>{
 
 const file = fs.readFileSync(files.file.filepath);
 
-const response = await fetch("https://v2.convertapi.com/convert/pdf/to/docx?Secret=I9PKYFpujbycgDAx6ws1kzTqFwHdOqAq this is api token",{
+const response = await fetch("https://v2.convertapi.com/convert/pdf/to/docx?Secret=I9PKYFpujbycgDAx6ws1kzTqFwHdOqAq",{
 method:"POST",
 headers:{ "Content-Type":"application/octet-stream" },
 body:file
